@@ -20,4 +20,6 @@ export const envValidationSchema = Joi.object({
   REDIS_HOST: Joi.string().default('localhost'),
 
   REDIS_PORT: Joi.number().port().default(6379),
+
+  REDIS_URL: Joi.string().default('redis://localhost:6379'),
 });
